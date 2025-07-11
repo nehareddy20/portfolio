@@ -21,7 +21,7 @@ body {
 
 /* Link Styling */
 a {
-  color: #90caf9; /* Calm blue */
+  color: #90caf9;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -75,13 +75,6 @@ a:hover {
   background-color: #2a2d2f;
 }
 
-/* Headings */
-h2 {
-  font-size: 2rem;
-  color: #80cbc4;
-  margin-bottom: 15px;
-}
-
 /* Hero Section */
 .hero {
   text-align: center;
@@ -104,17 +97,22 @@ h2 {
   color: #cfd8dc;
 }
 
-/* Profile Pic */
-.profile-pic {
+/* Profile Image with Zoomed Crop */
+.profile-wrapper {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  border: 4px solid #80cbc4;
-  display: block;
-  margin: 20px auto;
-  object-fit: cover;
-  transform: scale(1.5); /* ZOOM IN */
   overflow: hidden;
+  margin: 0 auto 20px;
+  border: 4px solid #80cbc4;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  transform: scale(1.5);
+  transform-origin: center;
 }
 
 /* Cards */
@@ -137,24 +135,6 @@ h2 {
   color: #a7ffeb;
 }
 
-/* Skill Tags */
-.skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  list-style: none;
-  margin-top: 10px;
-}
-
-.skill-list li {
-  background: #37474f;
-  color: #e0f2f1;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
 /* Footer */
 .footer {
   text-align: center;
@@ -168,10 +148,6 @@ h2 {
 /* Responsive */
 @media (max-width: 768px) {
   .nav-links {
-    flex-direction: column;
-  }
-
-  .skill-list {
     flex-direction: column;
   }
 }
