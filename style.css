@@ -113,7 +113,7 @@ h2 {
   display: block;
   margin: 20px auto;
   object-fit: cover;
-  transform: scale(1.2); /* ZOOM IN */
+  transform: scale(1.5); /* ZOOM IN */
   overflow: hidden;
 }
 
