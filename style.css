@@ -111,7 +111,7 @@ a:hover {
   width: 160px;
   height: 160px;
   object-fit: cover;
-  transform: scale(1.5);
+  transform: scale(1.2) translateX(-10px); /* Zoom in & shift image left */
   transform-origin: center;
 }
 
