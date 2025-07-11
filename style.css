@@ -135,7 +135,7 @@ h2 {
   color: #a7ffeb;
 }
 
-/* Skills */
+/* Skill Tags */
 .skill-list {
   display: flex;
   flex-wrap: wrap;
@@ -153,58 +153,13 @@ h2 {
   font-weight: 500;
 }
 
-/* Contact Form */
-.contact-form {
-  background: #242526;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #333;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-  margin-top: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  background: #2e2f30;
-  color: #e0e0e0;
-  padding: 12px;
-  border: 1px solid #444;
-  border-radius: 8px;
-  font-size: 1rem;
-  margin-bottom: 15px;
-  transition: border 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border: 2px solid #80cbc4;
-  outline: none;
-}
-
-.contact-form .btn {
-  background: linear-gradient(to right, #26a69a, #80cbc4);
-  color: #000;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.contact-form .btn:hover {
-  transform: scale(1.05);
-}
-
 /* Footer */
 .footer {
   text-align: center;
   margin-top: 40px;
   padding: 20px 0;
   font-size: 0.9rem;
-  color: #999;
+  color: #888;
   border-top: 1px solid #333;
 }
 
