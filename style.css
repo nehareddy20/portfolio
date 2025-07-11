@@ -8,10 +8,25 @@
 /* Body */
 body {
   font-family: 'Roboto', sans-serif;
-  background: #181a1b;
+  background: linear-gradient(145deg, #1c1e20 0%, #181a1b 100%), url('assets/bg-pattern.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   color: #e0e0e0;
   line-height: 1.6;
   min-height: 100vh;
+}
+
+/* Link Styling */
+a {
+  color: #a7ffeb;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+a:hover {
+  color: #b2dfdb;
+  text-shadow: 0 0 8px rgba(128, 203, 196, 0.3);
 }
 
 /* Container */
@@ -30,13 +45,11 @@ body {
   z-index: 1000;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
-
 .logo {
   font-size: 2rem;
   font-weight: 700;
   color: #80cbc4;
 }
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -44,20 +57,37 @@ body {
   gap: 25px;
   margin-top: 10px;
 }
-
 .nav-links a {
-  text-decoration: none;
   color: #ccc;
   font-weight: 500;
   padding: 8px 12px;
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-
 .nav-links a:hover,
 .nav-links .active {
   color: #a7ffeb;
   background-color: #2a2d2f;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  margin-bottom: 30px;
+  background: rgba(36, 37, 38, 0.5);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+.hero h2 {
+  font-size: 2.5rem;
+  color: #80cbc4;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #cfd8dc;
 }
 
 /* Headings */
@@ -88,17 +118,15 @@ h2 {
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 0 15px rgba(128, 203, 196, 0.2);
 }
-
 .card h3 {
   color: #a7ffeb;
 }
 
-/* Skill list */
+/* Skills */
 .skill-list {
   display: flex;
   flex-wrap: wrap;
@@ -106,7 +134,6 @@ h2 {
   list-style: none;
   margin-top: 10px;
 }
-
 .skill-list li {
   background: #37474f;
   color: #e0f2f1;
@@ -125,7 +152,6 @@ h2 {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
   margin-top: 20px;
 }
-
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -138,13 +164,11 @@ h2 {
   margin-bottom: 15px;
   transition: border 0.3s ease;
 }
-
 .contact-form input:focus,
 .contact-form textarea:focus {
   border: 2px solid #80cbc4;
   outline: none;
 }
-
 .contact-form .btn {
   background: linear-gradient(to right, #26a69a, #80cbc4);
   color: #000;
@@ -156,7 +180,6 @@ h2 {
   cursor: pointer;
   transition: transform 0.2s;
 }
-
 .contact-form .btn:hover {
   transform: scale(1.05);
 }
@@ -176,7 +199,6 @@ h2 {
   .nav-links {
     flex-direction: column;
   }
-
   .skill-list {
     flex-direction: column;
   }
